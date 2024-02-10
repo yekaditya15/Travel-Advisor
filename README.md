@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Travel Advisor App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployed Version
 
-## Available Scripts
+Check out the Travel Advisor App [here](https://travel-buddy-advisor.netlify.app/).
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to the Travel Advisor App, a web application built with ReactJS, Rapid API, Google API, and Material UI. This application serves as a travel guide, providing users with information about various travel destinations, attractions, and recommendations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Destination Search:** Users can search for their desired travel destinations using the integrated Google API for location suggestions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Attractions:** Get information about popular attractions, landmarks, and points of interest at the selected destination.
 
-### `npm run build`
+- **Reviews and Ratings:** User reviews and ratings from Rapid API are displayed for attractions and destinations, giving users insights into the experiences of other travelers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive Design:** The application is designed with Material UI, ensuring a seamless and responsive user experience across different devices.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the Travel Advisor App locally, follow these steps:
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/your-username/travel-advisor-app.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd travel-advisor-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Set up API keys:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Obtain API keys for Google API and Rapid API.
+   - Create a `.env` file in the project root.
+   - Add the following lines to the `.env` file, replacing `YOUR_GOOGLE_API_KEY` and `YOUR_RAPID_API_KEY` with your actual API keys:
 
-### Code Splitting
+     ```env
+     REACT_APP_GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
+     REACT_APP_RAPID_API_KEY=YOUR_RAPID_API_KEY
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Start the development server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application will be accessible at `http://localhost:3000` in your web browser.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- ReactJS: A JavaScript library for building user interfaces.
+- Rapid API: Utilized for fetching travel-related data, including reviews and ratings.
+- Google API: Used for location suggestions and retrieving additional details about destinations.
+- Material UI: A React UI framework that provides pre-built components for a consistent and visually appealing design.
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you would like to contribute to the Travel Advisor App, please follow these guidelines:
 
-### `npm run build` fails to minify
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your branch to your fork.
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
